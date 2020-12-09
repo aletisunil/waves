@@ -1,0 +1,44 @@
+.player {
+  display: flex;
+  min-height: 20vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-control {
+  width: 50%;
+
+  display: flex;
+  input {
+    width: 100%;
+    padding: 1rem, 2rem;
+    cursor: pointer;
+  }
+  p {
+    padding: 1rem;
+  }
+}
+.play-control {
+  display: flex;
+  width: 30%;
+  padding: 1rem;
+  justify-content: space-between;
+  svg {
+    cursor: pointer;
+  }
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+}
+@media screen and (max-width: 768px) {
+  .time-control {
+    width: 90%;
+  }
+  .play-control {
+    width: 60%;
+  }
+}
